@@ -4,28 +4,31 @@
 input_file=""
 reads_dir=""
 read_type=""
+log_path=""
 
 # Function to show usage
 usage() {
-    echo "Usage: $0 -f <input_file> -d <reads_dir> -t <read_type>"
+    echo "Usage: $0 -f <input_file> -d <reads_dir> -t <read_type> -l <log_path>"
     echo "  -f  File containing list of accession numbers"
     echo "  -d  Directory for downloaded reads"
     echo "  -t  Type of reads (single or paired)"
+    echo "  -l  Path to save the log file"
     exit 1
 }
 
 # Parse command-line options
-while getopts 'f:d:t:' flag; do
+while getopts 'f:d:t:l:' flag; do
     case "${flag}" in
         f) input_file=${OPTARG} ;;
         d) reads_dir=${OPTARG} ;;
         t) read_type=${OPTARG} ;;
+        l) log_path=${OPTARG} ;;
         *) usage ;;
     esac
 done
 
 # Check if all options are provided
-if [ -z "$input_file" ] || [ -z "$reads_dir" ] || [ -z "$read_type" ]; then
+if [ -z "$input_file" ] || [ -z "$reads_dir" ] || [ -z "$read_type" ] || [ -z "$log_path" ]; then
     usage
 fi
 
@@ -57,5 +60,8 @@ process_line() {
 # Export the function for parallel to use
 export -f process_line
 
-# Use parallel to process lines concurrently
-cat "$input_file" | parallel -j 4 process_line
+# Create or clear the log file
+: > "$log_path"
+
+# Use parallel to process lines concurrently and log the output
+cat "$input_file" | parallel -j 4 process_line 2>&1 | tee -a "$log_path"
