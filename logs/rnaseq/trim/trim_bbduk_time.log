@@ -1,0 +1,7 @@
+src/preprocess/02_bbduk_trim.sh: line 66: logs/rnaseq/trim/bbduk.log: No such file or directory
+ls: tee: logs/rnaseq/trim/bbduk.log: No such file or directory
+cannot access 'data/rnaseq/_raw/*.fastq.gz': No such file or directory
+
+real	0m0.297s
+user	0m0.235s
+sys	0m0.063s
