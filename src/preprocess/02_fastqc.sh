@@ -34,4 +34,4 @@ mkdir -p "$output_dir"
 mkdir -p "$(dirname "$log_path")"
 
 # Use parallel to process FastQC on files concurrently and log the output
-ls "${input_dir}"/*.fastq | parallel -q fastqc -o "$output_dir" {} > "$log_path"
+ls "${input_dir}"/*.fastq.gz | parallel -q fastqc -o "$output_dir" {} > "$log_path"
