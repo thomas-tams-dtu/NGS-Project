@@ -258,7 +258,3 @@ Result:                 	26201841 reads (62.47%) 	1310092050 bases (62.47%)
 Time:                         	673.029 seconds.
 Reads Processed:      41944k 	62.32k reads/sec
 Bases Processed:       2097m 	3.12m bases/sec
-
-real	11m14.576s
-user	171m31.265s
-sys	9m27.934s
