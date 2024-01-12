@@ -1,0 +1,34 @@
+
+  /// MultiQC 🔍 | v1.19
+
+|           multiqc | Report title: Trimmed reads multiqc
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782694_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782694_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782695_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782695_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782698_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782698_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782704_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782704_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782727_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782727_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782730_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782730_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782742_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782742_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782829_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782829_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782834_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782834_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782912_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782912_fastqc.zip
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 20/20  
+Matplotlib is building the font cache; this may take a moment.
+|            fastqc | Found 10 reports
+|           multiqc | Report      : results/rnaseq/multiqc/raw/Trimmed-reads-multiqc_multiqc_report.html
+|           multiqc | Data        : results/rnaseq/multiqc/raw/Trimmed-reads-multiqc_multiqc_report_data
+|           multiqc | MultiQC complete
+
+real	0m28.764s
+user	0m5.425s
+sys	0m1.941s
