@@ -26,10 +26,27 @@
 -o results/rnaseq/fastqc/trimmed/ \
 -l logs/rnaseq/fastqc/fastqc_trimmed.log ) 2>&1 | tee logs/rnaseq/fastqc/fastqc_trimmed_time.log
 
-########## Step 05: Run multiQC on raw reads ##########
+########## Step 04a: Run multiQC on raw reads ##########
+( time bash src/preprocess/04_multiqc.sh \
+-o results/rnaseq/multiqc/raw \
+-l logs/rnaseq/multiqc/multiqc_raw.log \
+-i results/rnaseq/fastqc/raw/ \
+-t "Raw reads multiqc") 2>&1 | tee logs/rnaseq/multiqc/multiqc_raw_time.log
 
+########## Step 04b: Run multiQC on trimmed reads ##########
+( time bash src/preprocess/04_multiqc.sh \
+-o results/rnaseq/multiqc/trimmed \
+-l logs/rnaseq/multiqc/multiqc_trimmed.log \
+-i results/rnaseq/fastqc/trimmed/ \
+-t "Trimmed reads multiqc") 2>&1 | tee logs/rnaseq/multiqc/multiqc_trimmed_time.log
 
-########## Step 06: Run multiQC on trimmed reads ##########
+########## Step 05: Quantify reads using kallisto ##########
+( time bash src/rnaseq/05_kallisto.sh \
+-f data/references/GRCh38_latest_rna.fna.gz \
+-r data/rnaseq/trimmed/ \
+-o data/rnaseq/kallisto/ \
+-t 10 \
+-l logs/rnaseq/kallisto/kallisto.log) 2>&1 | tee logs/rnaseq/kallisto/kallisto_time.log
 
 
 
