@@ -58,4 +58,4 @@ kallisto_quant() {
 export -f kallisto_quant
 
 # Find all fastq.gz files and run them in parallel
-find "$READ_DIR" -name '*.fastq.gz' | head -n 1 | parallel -j "$NUM_THREADS" kallisto_quant {}
+find "$READ_DIR" -name '*.fastq.gz' | parallel -j "$NUM_THREADS" kallisto_quant {}
