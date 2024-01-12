@@ -15,8 +15,14 @@ process_line() {
     line="$1"
     echo "Processing line: $line"
     
-    # Add your processing logic here
-    nice -n 19 fasterq-dump -p -e 1 -O $reads_dir $line
+    # Download reads with fasterq-dump
+    nice -n 19 fasterq-dump -p -e 1 -O "$reads_dir" "$line"
+
+    # Gzip the downloaded files and remove the original
+    for file in "${reads_dir}/${line}"*.fastq; do
+        echo "Compressing and removing original file: $file"
+        gzip -f "$file"
+    done
 }
 
 # Export the function for parallel to use
