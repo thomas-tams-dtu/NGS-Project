@@ -41,17 +41,21 @@ fi
 # Create Kallisto index (only needs to be done once)
 $kallisto index -i "${OUTPUT_DIR_ROOT}/kallisto_human_index.idx" "$REFERENCE_TRANSCRIPTOME"
 
+# Export variables for use in the exported function
+export OUTPUT_DIR_ROOT NUM_THREADS kallisto
+
+
 # Kallisto quant command function
 kallisto_quant() {
     local read_file=$1
     local base_name=$(basename "$read_file" .fastq.gz)
-    local output_dir="${OUTPUT_DIR_ROOT}/output_dir_${base_name}"
+    local output_dir="${OUTPUT_DIR_ROOT}/$(echo $base_name | sed "s/_trimmed//" )"
 
     # Create the output directory if it doesn't exist
     mkdir -p "$output_dir"
 
     # Run Kallisto quant and redirect output to log file
-    $kallisto quant -i "${OUTPUT_DIR_ROOT}/kallisto_human_index.idx" -o "$output_dir" --single -l 50 -s 5 -t "$NUM_THREADS" "$read_file"
+    $kallisto quant -i "${OUTPUT_DIR_ROOT}/kallisto_human_index.idx" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
 }
 
 # Export the function for parallel to use
