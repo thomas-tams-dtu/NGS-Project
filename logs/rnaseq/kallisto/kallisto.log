@@ -1,0 +1,320 @@
+mkdir: cannot create directory ‘/output_dir_SRR1782742_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782834_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782694_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782727_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782698_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782704_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782695_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782829_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782912_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782730_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782742_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782834_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782694_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782727_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782698_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782704_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782695_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782829_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782912_trimmed’: Permission denied
+environment: line 4: quant: command not found
+mkdir: cannot create directory ‘/output_dir_SRR1782730_trimmed’: Permission denied
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+environment: line 4: quant: command not found
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 14,196,655 reads, 10,459,996 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,253 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 12,862,541 reads, 9,773,193 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,216 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 19,208,175 reads, 2,474,572 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,071 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 26,914,766 reads, 3,443,760 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,136 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 12,881,417 reads, 9,756,423 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,202 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 16,047,255 reads, 11,431,613 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,196 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 19,828,747 reads, 12,847,788 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,250 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 23,951,325 reads, 17,615,975 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,321 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 26,201,841 reads, 16,233,947 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,175 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 27,493,574 reads, 18,905,546 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,219 rounds
+
+
+Usage: kallisto quant [arguments] FASTQ-files
+
+Required arguments:
+-i, --index=STRING            Filename for the kallisto index to be used for
+                              quantification
+-o, --output-dir=STRING       Directory to write output to
+
+Optional arguments:
+    --bias                    Perform sequence based bias correction
+-b, --bootstrap-samples=INT   Number of bootstrap samples (default: 0)
+    --seed=INT                Seed for the bootstrap sampling (default: 42)
+    --plaintext               Output plaintext instead of HDF5
+    --fusion                  Search for fusions for Pizzly
+    --single                  Quantify single-end reads
+    --single-overhang         Include reads where unobserved rest of fragment is
+                              predicted to lie outside a transcript
+    --fr-stranded             Strand specific reads, first read forward
+    --rf-stranded             Strand specific reads, first read reverse
+-l, --fragment-length=DOUBLE  Estimated average fragment length
+-s, --sd=DOUBLE               Estimated standard deviation of fragment length
+                              (default: -l, -s values are estimated from paired
+                               end data, but are required when using --single)
+-t, --threads=INT             Number of threads to use (default: 1)
+    --pseudobam               Save pseudoalignments to transcriptome to BAM file
+    --genomebam               Project pseudoalignments to genome sorted BAM file
+-g, --gtf                     GTF file for transcriptome information
+                              (required for --genomebam)
+-c, --chromosomes             Tab separated file with chromosome names and lengths
+                              (optional for --genomebam, but recommended)
+    --verbose                 Print out progress information every 1M proccessed reads
+
+Error: file not found find data/rnaseq/trimmed/ -name *.fastq.gz
+
+
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto// -name * --single -l 200 -s 20 -t 10 find data/rnaseq/trimmed/ -name *.fastq.gz
+read_file
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto// -name * --single -l 200 -s 20 -t 10 find data/rnaseq/trimmed/ -name *.fastq.gz
+find data/rnaseq/trimmed/ -name *.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto// -name * --single -l 200 -s 20 -t 10 find data/rnaseq/trimmed/ -name *.fastq.gz
+data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782742_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782834_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782694_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782727_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782698_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782704_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782695_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782829_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782912_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782730_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782742.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782742 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742.fastq.gz
+data/rnaseq/trimmed/SRR1782834.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782834 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834.fastq.gz
+data/rnaseq/trimmed/SRR1782694.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782694 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694.fastq.gz
+data/rnaseq/trimmed/SRR1782727.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782727 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727.fastq.gz
+data/rnaseq/trimmed/SRR1782698.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782698 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698.fastq.gz
+data/rnaseq/trimmed/SRR1782704.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782704 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704.fastq.gz
+data/rnaseq/trimmed/SRR1782695.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782695 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695.fastq.gz
+data/rnaseq/trimmed/SRR1782829.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782829 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829.fastq.gz
+data/rnaseq/trimmed/SRR1782912.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782912 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912.fastq.gz
+data/rnaseq/trimmed/SRR1782730.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782730 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730.fastq.gz
+data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782742_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782742_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782834_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782834_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782694_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782694_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782727_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782727_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782698_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782698_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782704_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782704_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782695_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782695_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782829_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782829_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782912_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782912_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782730_trimmed
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782730_trimmed --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782742
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782742 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782834
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782834 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782694
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782694 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782727
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782727 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782698
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782698 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782704
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782704 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782695
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782695 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782829
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782829 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782912
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782912 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782730
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782730 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
