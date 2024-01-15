@@ -1,6 +1,6 @@
 ########## Step 01: Download RNA-seq FASTQ raw reads from SRA ##########
 ( time bash src/preprocess/01_download_raw_fastq.sh \
--f data/rnaseq/rnaseq_acc_list_2.txt \
+-f data/rnaseq/rnaseq_acc_list_3.txt \
 -d data/rnaseq/_raw/ \
 -t single \
 -l logs/rnaseq/download/fastq-dump.log ) 2>&1 | tee logs/rnaseq/download/download_fastq_time.log
