@@ -42,7 +42,7 @@ if [ -z "$REFERENCE_TRANSCRIPTOME" ] || [ -z "$GENE_ANNOTATION" ] || [ -z "$READ
 fi
 
 # Create Kallisto index (only needs to be done once)
-$kallisto index -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" "$REFERENCE_TRANSCRIPTOME" "$GENE_ANNOTATION"
+nice -n 19 $kallisto index -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" "$REFERENCE_TRANSCRIPTOME" "$GENE_ANNOTATION"
 
 # Export variables for use in the exported function
 export OUTPUT_DIR_ROOT NUM_THREADS kallisto
@@ -58,7 +58,7 @@ kallisto_quant() {
     mkdir -p "$output_dir"
 
     # Run Kallisto quant and redirect output to log file
-    $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+    nice -19 $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
 }
 
 # Export the function for parallel to use
