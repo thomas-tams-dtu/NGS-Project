@@ -1,0 +1,11 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR1782694	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782694_trimmed_fastqc.zip
+FastQC	all_sections	SRR1782695	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782695_trimmed_fastqc.zip
+FastQC	all_sections	SRR1782698	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782698_trimmed_fastqc.zip
+FastQC	all_sections	SRR1782704	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782704_trimmed_fastqc.zip
+FastQC	all_sections	SRR1782727	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782727_trimmed_fastqc.zip
+FastQC	all_sections	SRR1782730	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782730_trimmed_fastqc.zip
+FastQC	all_sections	SRR1782742	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782742_trimmed_fastqc.zip
+FastQC	all_sections	SRR1782829	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782829_trimmed_fastqc.zip
+FastQC	all_sections	SRR1782834	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782834_trimmed_fastqc.zip
+FastQC	all_sections	SRR1782912	/home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782912_trimmed_fastqc.zip
