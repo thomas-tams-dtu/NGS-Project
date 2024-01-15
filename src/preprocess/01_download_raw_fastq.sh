@@ -76,3 +76,8 @@ export -f process_line
 
 # Use parallel to process lines concurrently and log the output
 cat "$input_file" | parallel -j $num_processes process_line 2>&1 | tee -a "$log_path"
+
+# Find all files with '_pass' in their names and rename them
+find "$reads_dir" -type f -name "*_pass*" | while read file; do
+    mv "$file" "$(echo $file | sed 's/_pass//')"
+done
