@@ -1,0 +1,8 @@
+stat: Bad file descriptor
+Warning: Could not open read file "data/amplicon/trimmed_reads_tpe/SRR1210649_2_trimmed_1.fastq.gz" for reading; skipping...
+Error: No input read files were valid
+(ERR): bowtie2-align exited with value 1
+stat: Bad file descriptor
+Warning: Could not open read file "data/amplicon/trimmed_reads_tpe/SRR1210661_2_trimmed_1.fastq.gz" for reading; skipping...
+Error: No input read files were valid
+(ERR): bowtie2-align exited with value 1
