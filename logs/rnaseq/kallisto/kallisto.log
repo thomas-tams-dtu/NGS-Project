@@ -732,3 +732,111 @@ HDF5 support to obtain bootstrap estimates.
 /home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782952 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
 /home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782802 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782802_trimmed.fastq.gz
 /home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782728 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782728_trimmed.fastq.gz
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172340 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172357 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172294 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172310 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172332 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172344 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172316 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172355 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172354 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172351 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172584 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172583 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172585 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172586 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172665 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172678 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172664 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,931
+[index] number of k-mers: 1,716,733,800
+environment: line 1: 172759 Killed                  $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
