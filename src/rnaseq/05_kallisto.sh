@@ -55,7 +55,7 @@ kallisto_quant() {
     mkdir -p "$output_dir"
 
     # Run Kallisto quant and redirect output to log file
-    $kallisto quant -i "${OUTPUT_DIR_ROOT}/kallisto_human_index.idx" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+    $kallisto quant -i "${OUTPUT_DIR_ROOT}/kallisto_human_index.idx" -o "$output_dir" --single -l 200 -s 20 -b 100 -t "$NUM_THREADS" "$read_file"
 }
 
 # Export the function for parallel to use
