@@ -258,3 +258,477 @@
 [   em] quantifying the abundances ... done
 [   em] the Expectation-Maximization algorithm ran for 1,137 rounds
 
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 12,862,541 reads, 9,773,193 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,216 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 12,881,417 reads, 9,756,423 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,202 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 14,196,655 reads, 10,459,996 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,253 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 19,208,175 reads, 2,474,572 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,071 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 16,047,255 reads, 11,431,613 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,196 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 19,828,747 reads, 12,847,788 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,250 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 26,914,766 reads, 3,443,760 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,136 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 23,951,325 reads, 17,615,975 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,321 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 27,493,574 reads, 18,905,546 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,219 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 26,201,841 reads, 16,233,947 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,175 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782701_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 11,015,939 reads, 8,433,941 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,260 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782686_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 14,514,152 reads, 11,296,196 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,246 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782703_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 12,360,559 reads, 9,457,868 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,272 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782705_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 16,281,416 reads, 10,045,261 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,155 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782715_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 14,304,662 reads, 10,541,216 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,218 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782722_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 15,799,835 reads, 11,354,749 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,202 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782773_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 13,502,874 reads, 9,827,970 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,197 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782774_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 14,014,365 reads, 10,568,198 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,261 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782804_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 13,381,574 reads, 9,903,190 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,198 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+Warning: kallisto was not compiled with HDF5 support so no bootstrapping
+will be performed. Run quant with --plaintext option or recompile with
+HDF5 support to obtain bootstrap estimates.
+[index] k-mer length: 31
+[index] number of targets: 185,121
+[index] number of k-mers: 142,403,527
+[index] number of equivalence classes: 657,654
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 18,451,120 reads, 8,038,043 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,137 rounds
+
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782742 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782834 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782694 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782727 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782698 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782704 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782695 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782829 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782912 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782730 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782686 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782686_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782701 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782701_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782703 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782703_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782705 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782705_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782715 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782715_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782722 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782722_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782773 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782773_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782804 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782804_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782774 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782774_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782952 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782728 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782728_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782802 --single -l 200 -s 20 -b 100 -t 10 data/rnaseq/trimmed/SRR1782802_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782742 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782834 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782694 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782727 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782698 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782704 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782695 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782829 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782912 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782730 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782686 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782686_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782701 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782701_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782703 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782703_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782705 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782705_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782715 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782715_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782722 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782722_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782773 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782773_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782774 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782774_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782804 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782804_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782952 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782728 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782728_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782802 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782802_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782742 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782834 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782694 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782727 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782698 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782704 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782695 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782829 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782912 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782730 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782686 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782686_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782701 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782701_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782703 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782703_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782705 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782705_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782715 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782715_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782722 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782722_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782773 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782773_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782774 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782774_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782804 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782804_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782952 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782728 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782728_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782802 --bootstrap-samples 100 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782802_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782742 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782834 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782694 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782727 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782698 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782704 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782695 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782829 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782912 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782730 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782686 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782686_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782701 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782701_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782703 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782703_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782705 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782705_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782715 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782715_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782722 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782722_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782773 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782773_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782774 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782774_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782804 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782804_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782952 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782728 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782728_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782802 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782802_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782742 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782834 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782694 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782727 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782698 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782704 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782695 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782829 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782912 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782730 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782686 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782686_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782701 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782701_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782703 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782703_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782705 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782705_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782715 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782715_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782722 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782722_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782804 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782804_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782774 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782774_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782773 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782773_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782952 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782802 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782802_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782728 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782728_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782742 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782834 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782694 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782727 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782698 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782704 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782695 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782829 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782912 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782730 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782686 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782686_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782701 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782701_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782703 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782703_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782705 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782705_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782715 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782715_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782722 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782722_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782773 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782773_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782774 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782774_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782804 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782804_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782952 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782728 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782728_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782802 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782802_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782742 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782834 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782727 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782694 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782698 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782695 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782704 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782829 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782912 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782730 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782686 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782686_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782701 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782701_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782703 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782703_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782705 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782705_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782715 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782715_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782722 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782722_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782773 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782773_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782774 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782774_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782804 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782804_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782952 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782802 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782802_trimmed.fastq.gz
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//GRCh38.p13_index -o data/rnaseq/kallisto//SRR1782728 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782728_trimmed.fastq.gz

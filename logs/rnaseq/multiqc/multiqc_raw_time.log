@@ -1,54 +1,47 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2859, in get_entry_map
+    ep_map = self._ep_map
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2817, in __getattr__
+    raise AttributeError(attr)
+AttributeError: _ep_map
 
-  /// MultiQC 🔍 | v1.19
+During handling of the above exception, another exception occurred:
 
-|           multiqc | Report title: Raw reads multiqc
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782686_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782686_pass_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782694_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782694_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782695_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782695_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782698_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782698_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782701_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782701_pass_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782703_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782703_pass_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782704_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782704_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782705_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782705_pass_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782715_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782715_pass_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782722_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782722_pass_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782727_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782727_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782730_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782730_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782742_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782742_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782773_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782773_pass_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782774_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782774_pass_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782804_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782804_pass_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782829_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782829_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782834_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782834_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782912_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782912_fastqc.zip
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782952_pass_fastqc.html
-|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/raw/SRR1782952_pass_fastqc.zip
-|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 40/40  
-|            fastqc | Found 20 reports
-|           multiqc | Existing reports found, adding suffix to filenames. Use '--force' to overwrite.
-|           multiqc | Report      : results/rnaseq/multiqc/raw/Raw-reads-multiqc_multiqc_report_1.html
-|           multiqc | Data        : results/rnaseq/multiqc/raw/Raw-reads-multiqc_multiqc_report_data_1
-|           multiqc | MultiQC complete
+Traceback (most recent call last):
+  File "/usr/local/bin/multiqc", line 5, in <module>
+    from multiqc.__main__ import run_multiqc
+  File "/usr/local/lib/python3.8/dist-packages/multiqc/__init__.py", line 16, in <module>
+    from .multiqc import run
+  File "/usr/local/lib/python3.8/dist-packages/multiqc/multiqc.py", line 30, in <module>
+    from .plots import table
+  File "/usr/local/lib/python3.8/dist-packages/multiqc/plots/table.py", line 9, in <module>
+    from multiqc.plots import beeswarm, table_object
+  File "/usr/local/lib/python3.8/dist-packages/multiqc/plots/beeswarm.py", line 8, in <module>
+    from multiqc.plots import table_object
+  File "/usr/local/lib/python3.8/dist-packages/multiqc/plots/table_object.py", line 9, in <module>
+    from multiqc.utils import config, report
+  File "/usr/local/lib/python3.8/dist-packages/multiqc/utils/config.py", line 67, in <module>
+    for entry_point in pkg_resources.iter_entry_points("multiqc.modules.v1"):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 657, in <genexpr>
+    for entry in dist.get_entry_map(group).values()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2861, in get_entry_map
+    ep_map = self._ep_map = EntryPoint.parse_map(
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2529, in parse_map
+    for group, lines in data:
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3201, in split_sections
+    for line in yield_lines(s):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2389, in yield_lines
+    for ss in strs:
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2769, in _get_metadata
+    for line in self.get_metadata_lines(name):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1433, in get_metadata_lines
+    return yield_lines(self.get_metadata(name))
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1421, in get_metadata
+    value = self._get(path)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1617, in _get
+    with open(path, 'rb') as stream:
+PermissionError: [Errno 13] Permission denied: '/usr/local/lib/python3.8/dist-packages/numpy-1.24.1.dist-info/entry_points.txt'
 
-real	0m18.426s
-user	0m2.965s
-sys	0m1.820s
+real	0m2.706s
+user	0m0.770s
+sys	0m0.098s
