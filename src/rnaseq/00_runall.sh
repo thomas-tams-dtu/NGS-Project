@@ -42,7 +42,8 @@
 
 ########## Step 05: Quantify reads using kallisto ##########
 ( time bash src/rnaseq/05_kallisto.sh \
--f data/references/GRCh38_latest_rna.fna.gz \
+-f data/references/gencode.v45.transcripts.fa.gz \
+-a data/references/gencode.v45.annotation.gtf.gz \
 -r data/rnaseq/trimmed/ \
 -o data/rnaseq/kallisto/ \
 -t 10 \
