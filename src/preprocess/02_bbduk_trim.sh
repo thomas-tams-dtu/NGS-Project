@@ -73,7 +73,7 @@ trim_command() {
         trim1=$(echo $base | sed "s/.fastq.gz//")_trimmed_1.fastq.gz
         trim2=$(echo $base | sed "s/.fastq.gz//")_trimmed_2.fastq.gz
         st=$(echo $base | sed "s/.fastq.gz//")_trimmed_singleton.fastq.gz
-        nice -n 19 bbduk.sh -Xmx4g in1=$1 in2=$read2 out1=$trim1 out2=$trim2 outs=$st threads=$threads k=$k kmin=$kmin ktrim=$ktrim qtrim=$qtrim trimq=$trimq minlength=$minlength overwrite=$overwrite ziplevel=$ziplevel ref=$adapters_path tbo tpe
+        nice -n 19 bbduk.sh -Xmx4g in1=$1 in2=$read2 out1="$trimmed_dir"$trim1 out2="$trimmed_dir"$trim2 outs="$trimmed_dir"$st threads=$threads k=$k kmin=$kmin ktrim=$ktrim qtrim=$qtrim trimq=$trimq minlength=$minlength overwrite=$overwrite ziplevel=$ziplevel ref=$adapters_path tbo tpe
     else
         trim1=$(echo $base | sed "s/.fastq.gz//")_trimmed.fastq.gz
         nice -n 19 bbduk.sh -Xmx4g in1=$1 out1="$trimmed_dir"$trim1 threads=$threads k=$k kmin=$kmin ktrim=$ktrim qtrim=$qtrim trimq=$trimq minlength=$minlength overwrite=$overwrite ziplevel=$ziplevel ref=$adapters_path
