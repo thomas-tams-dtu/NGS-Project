@@ -51,21 +51,26 @@ mkdir -p "$reads_dir"
 # Function to process each line
 process_line() {
     line="$1"
-    echo "Processing line: $line"
-
-    # Common fastq-dump options
-    common_opts="--gzip --skip-technical --readids --read-filter pass --dumpbase --clip -O $reads_dir"
-
-    # Check if the read type is paired and set the appropriate fastq-dump flags
-    if [ "$read_type" == "paired" ]; then
-        fastq_dump_options="$common_opts --split-files $line"
+    if [[ -e "${reads_dir}${line}_1.fastq.gz" ]]; then
+        echo "${reads_dir}${line}_1.fastq.gz exists"
     else
-        fastq_dump_options="$common_opts $line"
-    fi
+        echo "Processing line: $line"
 
-    # Download reads with fastq-dump
-    echo $fastq_dump_options
-    nice -n 19 fastq-dump $fastq_dump_options
+        # Common fastq-dump options
+        common_opts="--gzip --skip-technical --readids --read-filter pass --dumpbase --clip -O $reads_dir"
+
+        # Check if the read type is paired and set the appropriate fastq-dump flags
+        if [ "$read_type" == "paired" ]; then
+            fastq_dump_options="$common_opts --split-files $line"
+        else
+            fastq_dump_options="$common_opts $line"
+        fi
+
+        # Download reads with fastq-dump
+        echo $fastq_dump_options
+        nice -n 19 fastq-dump $fastq_dump_options
+
+    fi
 }
 
 # Export the function for parallel to use
