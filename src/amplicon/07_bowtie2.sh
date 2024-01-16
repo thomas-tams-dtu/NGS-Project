@@ -56,10 +56,10 @@ export -f run_bowtie
 
 # Loop parallelize bowtie across all reads in reads_dir
 ls ${reads_dir}*_1.fastq.gz | \
-  head -n 2 | \
   parallel -j $threads run_bowtie 2>&1 | tee -a $log_path
 
-
+echo ${bowtie_dir}
+echo $(ls ${bowtie_dir}*_host_removed.*)
 # Rename host_removed files to .fasta.gz
 host_removed_files=($(ls ${bowtie_dir}*_host_removed.*))
 echo "$host_removed_files"
