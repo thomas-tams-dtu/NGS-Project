@@ -40,3 +40,15 @@ else
   echo "removing GRCh38_noalt_as.zip" && \
   rm data/_raw/GRCh38_noalt_as.zip
 fi
+
+
+# Download silva dada2 indexed database
+dada2_index_dir="data/references/silva_nr99_v138.1_train_set"
+if [ -d "dada2_index_dir" ]; then
+  echo "$dada2_index_dir already downloaded"
+else
+  echo "Downloading silva_nr99_v138.1_train_set"
+  wget -P data/references https://zenodo.org/api/records/4587955/files-archive && \
+  echo "unzipping silva_nr99_v138.1_train_set" && \
+  unzip data/references/files-archive -d data/references/silva_nr99_v138.1_train_set
+fi

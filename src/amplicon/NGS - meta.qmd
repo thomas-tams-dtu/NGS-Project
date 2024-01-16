@@ -1,0 +1,524 @@
+---
+title: "metagenomics"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(broom)
+library('phyloseq')
+library('DAtest')
+library('vegan')
+library('here')
+```
+
+## Load in data
+
+### otu.tab
+
+```{r}
+otutab <- read.csv(here("metagenomics/pacu_kaiju.otu.tab"), sep = "\t", row.names = 1, header = TRUE)
+OTU = otu_table(otutab, taxa_are_rows = TRUE)
+```
+
+### tax.tab
+
+```{r}
+taxtab <- read.csv(here("metagenomics/pacu_kaiju.tax.tab"), sep = "\t", row.names = 1, header = TRUE)
+taxmat = as.matrix(taxtab)
+TAX = tax_table(taxmat)
+```
+
+### metadata.csv
+
+```{r}
+metadata = read.csv(here("metagenomics/metadata.csv"), sep = ",", skip=1, header=FALSE)
+metadata <- rename(metadata, Run=1, Day=2, Treatment=3) #renaming the columns 
+```
+
+## Combine data into physeq object
+
+```{r}
+META = sample_data(metadata)
+rownames(META) <-metadata$Run
+physeq = phyloseq(OTU, TAX, META)
+physeq 
+```
+
+```{r}
+saveRDS(physeq, "pacu.phyloseq.rds")
+```
+
+## Sample composition
+
+### Plotting entire dataset
+
+```{r}
+physeq_df <- psmelt(physeq)
+raw_kaiju_barplot <- ggplot(physeq_df, 
+                          aes(x = Sample, y = Abundance, fill = Domain)) + 
+  theme_bw() +
+  geom_bar(stat = "identity") +
+  theme(axis.text.x = element_text(angle=90, size=6))
+
+raw_kaiju_barplot
+ggsave(here("metagenomics/Results/raw_kaiju_barplot.png"))
+```
+
+### Use only bacteria for simplicity
+
+```{r}
+physeq_bac <- subset_taxa(physeq, Domain == "Bacteria")
+```
+
+### Filtering bacteria
+
+We only want taxa that have at least a 0.00005 fraction of the total reads. These will be fused into a category called "Others". This is quite a lot that we filter but it allows us to work faster in this example. Firstly we identify the number of reads from the fraction 0.00005.
+
+```{r}
+n_reads <- sum(sample_sums(physeq_bac))*0.00005
+physeq_bac_cutoff = preDA(physeq_bac, min.reads = n_reads)
+physeq_bac_cutoff
+```
+
+### Visualizing filtered
+
+```{r}
+physeq_bac_cutoff_df <- psmelt(physeq_bac_cutoff)
+
+ggplot(physeq_bac_cutoff_df,
+       aes(x = Sample, y = Abundance, fill = Family)) +
+  theme_bw() +
+  geom_bar(stat = "identity") +
+  theme(axis.text.x = element_text(angle=90, size=6))
+
+ggsave(here("metagenomics/Results/kaijuClassbarplot.png"), width = unit(15,"cm"))
+```
+
+### Relative abundance clustered in treatment types
+
+```{r}
+physeq_relat_abund <- transform_sample_counts(physeq_bac_cutoff, function(x)
+    {x / sum(x)})
+
+phyloseq::plot_bar(physeq_relat_abund, fill = "Phylum") +
+  geom_bar(aes(color = Phylum,
+               fill = Phylum),
+           stat = "identity",
+           position = "stack") +
+  labs(x = "",
+       y = "Relative Abundance\n") +
+  facet_wrap(~ Treatment,
+             scales = "free") +
+  theme(panel.background = element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+
+ggsave(here("metagenomics/Results/kaijuPhylumRel_abund.png"), width = unit(10, "cm"))
+```
+
+## Beta-diversity
+
+### CLR TIME
+
+```{r}
+# Zero correct 0 -> 1
+physeq_zc <- transform_sample_counts(physeq_bac_cutoff, 
+                                     function(y) sapply(y, function(x) ifelse(x==0, 1, (1-(sum(y==0)*1)/sum(y))*x)))
+
+# clr transforming data
+physeq_clr <- transform_sample_counts(physeq_zc,
+                                      function(x) log(x/exp(mean(log(x)))))
+
+ord_clr <- ordinate(physeq_clr, "RDA")
+ord_clr
+```
+
+```{r}
+plot_scree(ord_clr) +
+  geom_bar(stat="identity", fill = "blue") +
+  labs(x = "\nAxis", y = "Proportion of Variance\n")
+
+ggsave(here("metagenomics/Results/kaijuclrscree.png"))
+```
+
+### Extract PC1 and PC2 scaled to explain relative amount of each
+
+```{r}
+clr1 <- ord_clr$CA$eig[1] / sum(ord_clr$CA$eig)
+clr2 <- ord_clr$CA$eig[2] / sum(ord_clr$CA$eig)
+
+```
+
+```{r}
+plot_ordination(physeq, ord_clr, type="samples", color="Treatment") +
+  geom_point(size = 4) +
+  coord_fixed(clr2 / clr1) + 
+  geom_text(aes(label=Day), colour="black")
+ggsave("Results/kaijuclrPCA.png")
+```
+
+```{r}
+plot_ordination(physeq, ord_clr, type="samples", color="Treatment") +
+  geom_point(size = 6) +
+  geom_text(aes(label=Day), colour="black")
+ggsave("Results/kaijuclrPCA1x1.png")
+```
+
+### Creating Aitchison distance matrix
+
+```{r}
+clr_dist_matrix <- distance(physeq_clr, method = "euclidean")
+clr_adonis <- adonis2(clr_dist_matrix ~ sample_data(physeq_clr)$Treatment, method = "eucledian")
+```
+
+```{r}
+library(pairwiseAdonis)
+pw_adonis <- pairwise.adonis(clr_dist_matrix,
+                sample_data(physeq_clr)$Treatment,
+                sim.method = "eucledian",
+                p.adjust.m = "holm")
+
+pw_adonis |>
+  filter(p.adjusted < 0.05) |>
+  pull(pairs)
+```
+
+## Differential abundance
+
+```{r}
+library(phyloseq)
+library(DAtest)
+library(DESeq2)
+
+```
+
+### Select Genus level taxonomy
+
+```{r}
+pacuphyseq = readRDS("pacu.phyloseq.rds")
+phy_genus <- tax_glom(pacuphyseq, "Genus")
+saveRDS(phy_genus, "pacu.phyloseq_genus.rds")
+phy_genus
+```
+
+```{r}
+treatdds <- phyloseq_to_deseq2(phy_genus, ~ Treatment)
+treatdds <- DESeq(treatdds)
+treatdds
+?DESeq
+```
+
+```{r}
+res = results(treatdds, alpha = 0.05)
+res
+alpha = 0.05
+sigtab = res[which(res$padj < alpha), ]
+sigtab = cbind(as(sigtab, "data.frame"),
+               as(tax_table(phy_genus)[rownames(sigtab), ],
+                  "matrix"))
+
+head(sigtab)
+dim(sigtab)
+```
+
+```{r}
+sig100 <- sigtab[order(sigtab$padj),][1:100,]
+```
+
+```{r}
+library("ggplot2")
+theme_set(theme_bw())
+scale_fill_discrete <- function(palname = "Set1", ...) {
+  scale_fill_brewer(palette = palname, ...)
+}
+
+# Phylum order
+x = tapply(sigtab$log2FoldChange, sigtab$Phylum, function(x) max(x))
+x = sort(x, TRUE)
+sigtab$Phylum = factor(as.character(sigtab$Phylum), levels=names(x))
+# Genus order
+x = tapply(sigtab$log2FoldChange, sigtab$Genus, function(x) max(x))
+x = sort(x, TRUE)
+sigtab$Genus = factor(as.character(sigtab$Genus), levels=names(x))
+ggplot(sigtab, aes(x=Genus, y=log2FoldChange, color=Phylum)) + geom_point(size=2) + 
+  theme(axis.text.x = element_text(angle = -90, hjust = 0, vjust=0.5))
+ggsave("Results/DDseq_100OTU.png")
+```
+
+# Quantitative meta
+
+### Load in raw read data
+
+```{r}
+library("vegan")
+load(url("http://teaching.healthtech.dtu.dk/material/22126/Counts_NGS.RData"))
+
+Counts |> dim()
+```
+
+```{r}
+sampleDepth<-(colSums(Counts))
+hist(sampleDepth, breaks=100, ylab="Number of samples", xlab="Number of reads", main="Sample depth")
+range(sampleDepth)
+```
+
+### Mapped reads to taxonomy
+
+```{r}
+load(url("http://teaching.healthtech.dtu.dk/material/22126//taxonomy_species.RData"))
+head(taxonomy_species)
+```
+
+```{r}
+taxCounts<-apply(Counts, 2, tapply, INDEX=taxonomy_species, sum)
+str(taxCounts)
+taxCounts |> view()
+taxCounts |> dim()
+```
+
+### Plotting richness
+
+```{r}
+species_richness<-(colSums(taxCounts>0))
+names(species_richness)<-NULL
+require(vegan)
+speciesDiversity<-diversity(t(taxCounts), index = "shannon")
+names(speciesDiversity)<-NULL 
+par(mfrow=c(1,1))
+barplot(sort(species_richness),
+        las=3,
+        main="Species richness",
+        xlab="Samples",
+        ylab="Richness")
+barplot(sort(speciesDiversity),
+        xlab="Samples",
+        las=3,
+        main="Diversity (Shannon)")
+plot(species_richness,speciesDiversity,xlab="Richness", ylab="Shannon diversity index")
+```
+
+### Downsizing
+
+```{r}
+downsizeTarget <- sampleDepth |>
+  min()
+
+total_reads <- sampleDepth |>
+  sum()
+
+lost_reads <- downsizeTarget - sampleDepth |>
+  sum()
+
+plot(sampleDepth, pch=20, log="y", xlab="Samples", ylab="Number of reads"); abline(h=downsizeTarget)
+```
+
+```{r}
+dz_Counts<-round(t(t(Counts)*downsizeTarget/sampleDepth))
+weak_samples<-sampleDepth<downsizeTarget
+dz_Counts[,weak_samples]<-NA # samples that did not make the cut
+```
+
+```{r}
+dz_taxCounts<-apply(dz_Counts, 2, tapply, INDEX=taxonomy_species, sum); gc() 
+```
+
+```{r}
+dz_species_richness<-(colSums(dz_taxCounts>0))
+names(dz_species_richness)<-NULL
+require(vegan)
+dz_speciesDiversity<-diversity(t(dz_taxCounts), index = "shannon")
+dz_speciesDiversity[weak_samples]<-NA
+names(dz_speciesDiversity)<-NULL
+```
+
+```{r}
+par(mfrow=c(1,1), pch=1)
+barplot(sort(dz_species_richness), las=3, main="Species richness (Downsized)", xlab="Species", ylab="Richness")
+barplot(sort(dz_speciesDiversity), las=3,main="Shannon's diversity index (downsized)", xlab="Species", ylab="Shannon diversity")
+plot(dz_species_richness,species_richness, xlab="downsized richness", ylab="raw richness", main="Richness")
+plot(dz_speciesDiversity,speciesDiversity,xlab="downsized species diversity", ylab="raw species diversity",main="Diversity (Shannon)")
+```
+
+### Abundance
+
+```{r}
+par(mfrow=c(1,2))
+barplot(taxCounts[,4], 
+        main="Person 4, SD > 3",
+        xaxt="n",
+        xlab="Species",
+        ylab="Normalized abundance")
+barplot(taxCounts[,240],
+        main="Person 240, SD < 0.5",
+        xaxt="n",
+        xlab="Species",
+        ylab="Normalized abundance")
+par(mfrow=c(1,1))
+```
+
+### Adding metadata
+
+Class are: le = Lean; ow = Overweight; ob = Obese
+
+```{r}
+load(url("http://teaching.healthtech.dtu.dk/material/22126/BMI.RData"))
+boxplot(BMI$BMI.kg.m2 ~ BMI$Class, col=c("red", "gray","blue"), ylab="BMI")
+```
+
+### Calculating wilcox test for e. coli
+
+```{r}
+wilcox.test(x=dz_taxCounts["Escherichia coli",BMI$Classification=="ob"], 
+            y=dz_taxCounts["Escherichia coli",BMI$Classification=="le"])
+```
+
+```{r}
+# Mean reads for each class of e.coli
+tapply(dz_taxCounts["Escherichia coli",], 
+       BMI$Classification,
+       mean,
+       na.rm=TRUE)
+```
+
+### Plotting wilcox pvalues for all species
+
+obese vs lean
+
+```{r}
+pval<-apply(dz_taxCounts,
+            1,
+            function(V){wilcox.test(x=V[BMI$Classification=="ob"],
+                                    y=V[BMI$Classification=="le"])$p.value})
+
+Abundance_ratio<-log2(apply(dz_taxCounts,
+                            1,
+                            function(V){
+                              mean(x=V[BMI$Classification=="ob"],
+                                             na.rm=TRUE)
+                              /
+                              mean(V[BMI$Classification=="le"],                                                              na.rm=TRUE)
+                              }))
+
+pval.adjust = p.adjust(pval, method="BH")
+plot(sort(pval.adjust), log="y", pch=16, xlab="Species", ylab="p-values")
+abline(h=0.05, col="grey", lty=2)
+
+pval.adjust |> 
+  as_tibble() |> 
+  filter(value < 0.05)
+```
+
+```{r}
+o<-order(pval)
+BMIstat<-data.frame(pval,pval.adjust, Abundance_ratio)[o,]
+BMIstat[1:10,] |> view()
+par(mar=c(5,18,5,5))
+barplot(BMIstat[1:10,3],
+                    names.arg=rownames(BMIstat)[1:10],
+                    las=1,xlab="log fold difference between lean and obese", horiz=TRUE)
+```
+
+```{r}
+library(RColorBrewer)
+library('gplots')
+vdist = as.matrix(vegdist(t(taxCounts)))
+rownames(vdist) = colnames(vdist)
+hmcol = colorRampPalette(brewer.pal(9, "GnBu"))(100)
+heatmap.2(vdist, trace='none', col=rev(hmcol))
+?heatmap.2
+?hclust
+```
+
+```{r}
+my.rda <- rda(t(taxCounts))
+biplot(my.rda, display = c("sites", "species"), type = c("text", "points"))
+```
+
+```{r}
+library(DESeq2)
+cts <- taxCounts
+coldata = BMI[,1]
+coldata = matrix(NA, nrow=nrow(BMI), ncol=1)
+coldata[,1] = as.vector(BMI[,1])
+rownames(coldata) = rownames(BMI)
+colnames(coldata) = "BMI"
+```
+
+```{r}
+all(rownames(coldata) == colnames(cts))
+```
+
+```{r}
+dds <- DESeqDataSetFromMatrix(countData = cts, colData = coldata, design = ~ BMI)
+dds <- DESeq(dds)
+res <- results(dds)
+res
+```
+
+```{r}
+resOrdered <- res[order(res$pvalue),]
+head(resOrdered)
+```
+
+# dada2
+
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("dada2", version = "3.18")
+```
+
+```{r}
+library('dada2')
+library('here')
+```
+
+```{r}
+path <- here("bowtie_t")
+list.files(path) |> head()
+```
+
+```{r}
+fnFs <- sort(list.files(path, pattern="_1.fastq.gz", full.names = TRUE))
+fnRs <- sort(list.files(path, pattern="_2.fastq.gz", full.names = TRUE))
+
+# Extract sample names, assuming filenames have format: SAMPLENAME_XXX.fastq
+sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
+```
+
+```{r}
+#plotQualityProfile(fnFs[1:2])
+```
+
+### Filtering??
+
+```{r}
+# Place filtered files in filtered/ subdirectory
+filtFs <- file.path(path, "filtered", paste0(sample.names, "_1_filt.fastq.gz"))
+filtRs <- file.path(path, "filtered", paste0(sample.names, "_2_filt.fastq.gz"))
+names(filtFs) <- sample.names
+names(filtRs) <- sample.names
+```
+
+```{r}
+fnFs[1]
+filtFs[1]
+out <- fastqPairedFilter(fn=c(fnFs[1], filtFs[1]), 
+                         fout=c(fnRs[1], filtRs[1]),
+                         maxN=0, maxEE=c(2,2), truncQ=2, rm.phix=TRUE,
+                         compress=TRUE, multithread=TRUE) # On Windows set multithread=FALSE
+head(out)
+```
+
+### Learn errors
+
+```{r}
+errF <- learnErrors(fnFs[1], multithread=TRUE)
+testFastqF
+```
+
+```{r}
+?assignTaxonomy()
+```
