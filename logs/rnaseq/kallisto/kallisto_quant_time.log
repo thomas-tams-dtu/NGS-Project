@@ -1,0 +1,290 @@
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 19,208,175 reads, 2,914,543 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,282 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 26,914,766 reads, 4,087,388 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,229 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 12,862,541 reads, 11,487,095 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,424 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 12,881,417 reads, 11,164,860 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,182 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 14,196,655 reads, 12,430,319 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,517 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 23,951,325 reads, 19,495,666 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,260 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 26,201,841 reads, 19,235,417 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,267 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 27,493,574 reads, 23,501,415 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,370 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 19,828,747 reads, 16,097,099 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,552 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 16,047,255 reads, 13,210,368 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,347 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782705_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 16,281,416 reads, 12,572,993 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,142 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782701_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 11,015,939 reads, 9,640,623 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,114 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782703_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 12,360,559 reads, 10,743,912 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,226 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782686_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 14,514,152 reads, 8,614,257 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,145 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782804_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 13,381,574 reads, 11,715,589 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,359 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782773_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 13,502,874 reads, 11,413,357 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,302 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782715_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 14,304,662 reads, 12,459,903 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,271 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782774_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 14,014,365 reads, 12,065,861 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,396 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782722_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 15,799,835 reads, 13,715,205 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,295 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782952_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 18,451,120 reads, 8,622,852 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,089 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782728_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 12,315,111 reads, 9,103,725 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,097 rounds
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 200, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 252,930
+[index] number of k-mers: 150,424,840
+[index] number of equivalence classes: 1,090,668
+[quant] running in single-end mode
+[quant] will process file 1: data/rnaseq/trimmed/SRR1782802_trimmed.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 13,522,363 reads, 11,729,302 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,116 rounds
+
+
+real	31m35.385s
+user	207m3.264s
+sys	18m53.538s
