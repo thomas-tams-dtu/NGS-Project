@@ -18,14 +18,15 @@ dexseq_results <- dexseq_results %>%
   as_tibble()
 sum(dexseq_results$padj <= 0.05, na.rm = TRUE ) #/ nrow(dexseq_results)
 
+# Load aggregated results
+aggregate_pvalues <- readRDS("data/rnaseq/diff_exprs/Pediatric_Crohn_disease_aggregated_pvals.RDS")
+aggregate_pvalues
+
+sum(aggregate_pvalues$padj_deseq <= 0.05, na.rm = TRUE)
 sum(aggregate_pvalues$padj_dexseq <= 0.05, na.rm = TRUE)
 aggregate_pvalues %>%
   filter(padj_dexseq <= 0.05) %>%
   arrange(padj_dexseq)
-
-# Load aggregated results
-aggregate_pvalues <- readRDS("data/rnaseq/diff_exprs/Pediatric_Crohn_disease_aggregated_pvals.RDS")
-aggregate_pvalues
 
 # Vulcano plot
 aggregate_pvalues <- aggregate_pvalues |>
@@ -93,31 +94,67 @@ library("ggplot2")
 
 dds_deseq <- readRDS("data/rnaseq/diff_exprs/Pediatric_Crohn_disease_dds.RDS")
 
-# Step 1: Prepare the Data
-# Extract normalized counts or use rlog/vst
-data <- assay(rlog(dds_deseq)) 
+top_genes <- aggregate_pvalues %>%
+  filter(padj_deseq <= 0.05 & abs(lfc_deseq) > 2) %>%
+  arrange(desc(lfc_deseq))
 
-# Convert to tidy format
-tidy_data <- as.data.frame(data) %>%
-  rownames_to_column(var = "gene") %>%
-  gather(key = "sample", value = "expression", -gene)
-
-# Step 2: Data Wrangling
-# Select genes of interest, for example, top 20 by variance
-top_genes <- tidy_data %>%
+top_genes_deseq <- deseq_results %>%
+  filter(padj < 0.3, str_detect(string = id, pattern = paste(top_genes$gene, collapse = "|"))) %>%
+  separate(col = "id", into = c("gene", "transcript_id"), sep = "\\:") %>%
   group_by(gene) %>%
-  summarize(variance = var(expression)) %>%
-  top_n(20, variance) %>%
-  pull(gene)
+  arrange(padj) %>%
+  dplyr::slice(n = 1) %>%
+  unite(col = "id", c("gene", "transcript_id"), sep = ":") %>%
+  arrange(desc(log2FoldChange))
+  
+# Step 1: Prepare the Data
+# Extract normalized counts data by using rlog
+norm_data <- rlog(dds_deseq, blind = FALSE)
+mat <- assay(norm_data) %>%
+  as.data.frame() %>%
+  rownames_to_column("id") %>%
+  filter(id %in% top_genes_deseq$id) %>% 
+  column_to_rownames("id")
+base_mean <- rowMeans(mat)
+mat_scaled <- t(apply(mat, 1, scale))
+colnames(mat_scaled) <- colData(dds_deseq)$sample_id
 
-filtered_data <- tidy_data %>%
-  filter(gene %in% top_genes)
+# Log2 fold change and baseMean columns
+num_keep <- 25
+rows_keep <- c(seq(1:num_keep), seq((nrow(mat_scaled) - num_keep), nrow(mat_scaled)))
 
-# Optionally, add sample clustering/ordering
+# Log2FC
+l2_val <- as.matrix(top_genes[rows_keep, ]$lfc_deseq)
+colnames(l2_val) <- "log2FC"
 
-# Step 3: Create the Heatmap
-ggplot(filtered_data, aes(x = sample, y = gene, fill = expression)) +
-  geom_tile() +
-  scale_fill_gradientn(colors = c("blue", "white", "red")) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+# BaseMean
+base_mean_val <- as.matrix(top_genes_deseq[rows_keep, ]$baseMean)
+colnames(base_mean_val) <- "AveExpr"
+
+library("ComplexHeatmap")
+library("RColorBrewer")
+library("circlize")
+
+# Heatmap
+ha <- HeatmapAnnotation(summary = anno_summary(gp = gpar(fill = 2), 
+                                               height = unit(2, "cm")))
+
+h1 <- Heatmap(mat_scaled[rows_keep,], cluster_rows = FALSE, 
+            column_labels = colnames(mat_scaled), name="Z-score",
+            cluster_columns = TRUE)
+h2 <- Heatmap(l2_val, row_labels = df.top$symbol[rows_keep], 
+            cluster_rows = F, name="logFC", top_annotation = ha, col = col_logFC,
+            cell_fun = function(j, i, x, y, w, h, col) { # add text to each grid
+              grid.text(round(l2_val[i, j],2), x, y)
+            })
+h3 <- Heatmap(mean, row_labels = df.top$symbol[rows_keep], 
+            cluster_rows = F, name = "AveExpr", col=col_AveExpr,
+            cell_fun = function(j, i, x, y, w, h, col) { # add text to each grid
+              grid.text(round(mean[i, j],2), x, y)
+            })
+
+h <- h1 #+ h2 + h3
+
+png("results/rnaseq/diff_exprs/heatmap_v1.png", res = 300)
+print(h)
+dev.off()
