@@ -24,7 +24,7 @@ dttm  (2): ReleaseDate, create_date
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 [1] TRUE
-Running Pediatric Crohn disease
+Running Pediatric_Crohn_disease_covariates
 Preparing metadata
 Converting count matrix to DESeqDataSet
 converting counts to integer mode
@@ -38,36 +38,3 @@ Running DESeq2
 estimating size factors
 estimating dispersions
 gene-wise dispersion estimates
-mean-dispersion relationship
-final dispersion estimates
-fitting model and testing
-Stored DESeqDataSet in results/Pediatric Crohn disease_dds.RDS
-Extracting results
-Stored DESeq2 results in results/Pediatric Crohn disease_deseqres.RDS
-Initiating DEXSeq
-Creating DEXSeqDataSet
-converting counts to integer mode
-Stored DEXSeqDataSet in results/Pediatric Crohn disease_dxd.RDS
-
-Running DEXSeq -- This might take a while
-161 rows did not converge in beta, labelled in mcols(object)$fullBetaConv. Use larger maxit argument with nbinomLRT
-Fit for gene/exon PCBP1-AS1 threw the next warning(s): the matrix is either rank-deficient or indefinite
-Stored DEXSeq results in results/Pediatric Crohn disease_dexseqres.RDS
-Pediatric Crohn disease is analysed.
-Aggregating p values
-Stored gene pvalue aggregation in results/Pediatric Crohn disease_aggregated_pvals.RDS
-Done.
-Warning messages:
-1: In pre_filter(dds, prefilter) : 
-Removing 104207 rows with a summed count lower than 10
-Removing 4060 rows with counts in less than 2 samples.
-
-2: In DESeqDataSet(rse, design, ignoreRank = TRUE) :
-  some variables in design formula are characters, converting to factors
-Error in as.data.frame(.) : object 'ds_results' not found
-Calls: %>% ... filter -> as_tibble -> rownames_to_column -> as.data.frame
-Execution halted
-
-real	72m48.725s
-user	72m5.215s
-sys	0m21.818s
