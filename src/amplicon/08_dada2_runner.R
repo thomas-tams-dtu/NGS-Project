@@ -9,7 +9,7 @@ library('ggplot2'); packageVersion("ggplot2")
 theme_set(theme_bw())
 
 # Set path to input trimmed files
-path <- here("data/amplicon/trimmed_reads")
+path <- here("data/amplicon/bowtie2_tpe")
 
 # Get filenames of forward and reverse reads
 fnFs <- sort(list.files(path, pattern="_1.fastq.gz", full.names = TRUE))
@@ -25,15 +25,15 @@ filtRs <- file.path(here(paste0("data/amplicon/dada2/", sample.names, "_2_filt.f
 #names(filtFs) <- sample.names
 #names(filtRs) <- sample.names
 
-fnFs <- fnFs[1:2]
-fnRs <-  fnRs[1:2]
-filtFs <- filtFs[1:2]
-filtRs <- filtRs[1:2]
+#fnFs <- fnFs[1:2]
+#fnRs <-  fnRs[1:2]
+#filtFs <- filtFs[1:2]
+#filtRs <- filtRs[1:2]
 
-print(fnFs)
-print(fnRs)
-print(filtFs)
-print(filtRs)
+#print(fnFs)
+#print(fnRs)
+#print(filtFs)
+#print(filtRs)
 
 
 # Create empty files beforehand
@@ -111,16 +111,16 @@ baseSRAs_seqtab <- gsub("_1_filt.fastq.gz", "", rownames(seqtab.nochim))
 rownames(seqtab.nochim) <- baseSRAs_seqtab
 
 taxa <- assignTaxonomy(seqtab.nochim, 
-                       here("references/silva_nr99_v138.1_train_set.fa.gz"),
+                       here("data/references/silva_nr99_v138.1_train_set/silva_nr99_v138.1_train_set.fa.gz"),
                        multithread=TRUE)
 
 taxa <- addSpecies(taxa,
-                   here("references/silva_species_assignment_v138.1.fa.gz"))
+                   here("data/references/silva_nr99_v138.1_train_set/silva_species_assignment_v138.1.fa.gz"))
 
 
 ### Off to phyloseq
 ### Setup physeq data
-meta <- read_csv(here("_raw/amplicon_metadata.csv"))
+meta <- read_csv(here("data/amplicon/_raw/amplicon_metadata.csv"))
 meta <- meta |> filter(Run %in% baseSRAs_seqtab)
 
 # Create sample_data object and set row/ sample_names
@@ -150,4 +150,4 @@ taxa_names(ps) <- paste0("ASV", seq(ntaxa(ps)))
 
 
 # Saving phyloseq object
-saveRDS(ps, here("data/amplicon/dada2/amplicon_phyloseq_2.rds"))
+saveRDS(ps, here("data/amplicon/dada2/amplicon.phyloseq.rds"))
