@@ -1,0 +1,264 @@
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782704.fastq.gz out1=data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782704.fastq.gz, out1=data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.095 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4267m, used=27m
+
+Added 2152 kmers; time: 	0.172 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.213 seconds.
+Processing time:   		362.888 seconds.
+
+Input:                  	18250328 reads 		912516400 bases.
+QTrimmed:               	5271460 reads (28.88%) 	263573000 bases (28.88%)
+KTrimmed:               	116327 reads (0.64%) 	5816350 bases (0.64%)
+Total Removed:          	5387787 reads (29.52%) 	269389350 bases (29.52%)
+Result:                 	12862541 reads (70.48%) 	643127050 bases (70.48%)
+
+Time:                         	363.281 seconds.
+Reads Processed:      18250k 	50.24k reads/sec
+Bases Processed:        912m 	2.51m bases/sec
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782698.fastq.gz out1=data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782698.fastq.gz, out1=data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.073 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 2152 kmers; time: 	0.174 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.251 seconds.
+Processing time:   		400.767 seconds.
+
+Input:                  	18832032 reads 		941601600 bases.
+QTrimmed:               	5823484 reads (30.92%) 	291174200 bases (30.92%)
+KTrimmed:               	127131 reads (0.68%) 	6356550 bases (0.68%)
+Total Removed:          	5950615 reads (31.60%) 	297530750 bases (31.60%)
+Result:                 	12881417 reads (68.40%) 	644070850 bases (68.40%)
+
+Time:                         	401.204 seconds.
+Reads Processed:      18832k 	46.94k reads/sec
+Bases Processed:        941m 	2.35m bases/sec
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782694.fastq.gz out1=data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782694.fastq.gz, out1=data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.073 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 2152 kmers; time: 	0.170 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.225 seconds.
+Processing time:   		415.019 seconds.
+
+Input:                  	18871332 reads 		943566600 bases.
+QTrimmed:               	4545993 reads (24.09%) 	227299650 bases (24.09%)
+KTrimmed:               	128684 reads (0.68%) 	6434200 bases (0.68%)
+Total Removed:          	4674677 reads (24.77%) 	233733850 bases (24.77%)
+Result:                 	14196655 reads (75.23%) 	709832750 bases (75.23%)
+
+Time:                         	415.430 seconds.
+Reads Processed:      18871k 	45.43k reads/sec
+Bases Processed:        943m 	2.27m bases/sec
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782695.fastq.gz out1=data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782695.fastq.gz, out1=data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.082 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 2152 kmers; time: 	0.185 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.245 seconds.
+Processing time:   		469.491 seconds.
+
+Input:                  	21197741 reads 		1059887050 bases.
+QTrimmed:               	5029792 reads (23.73%) 	251489600 bases (23.73%)
+KTrimmed:               	120694 reads (0.57%) 	6034700 bases (0.57%)
+Total Removed:          	5150486 reads (24.30%) 	257524300 bases (24.30%)
+Result:                 	16047255 reads (75.70%) 	802362750 bases (75.70%)
+
+Time:                         	469.929 seconds.
+Reads Processed:      21197k 	45.11k reads/sec
+Bases Processed:       1059m 	2.26m bases/sec
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782829.fastq.gz out1=data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782829.fastq.gz, out1=data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.108 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 2152 kmers; time: 	0.144 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.301 seconds.
+Processing time:   		537.441 seconds.
+
+Input:                  	28781403 reads 		1439070150 bases.
+QTrimmed:               	9486739 reads (32.96%) 	474336950 bases (32.96%)
+KTrimmed:               	86489 reads (0.30%) 	4324450 bases (0.30%)
+Total Removed:          	9573228 reads (33.26%) 	478661400 bases (33.26%)
+Result:                 	19208175 reads (66.74%) 	960408750 bases (66.74%)
+
+Time:                         	537.893 seconds.
+Reads Processed:      28781k 	53.51k reads/sec
+Bases Processed:       1439m 	2.68m bases/sec
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782730.fastq.gz out1=data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782730.fastq.gz, out1=data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.100 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4265m, used=29m
+
+Added 2152 kmers; time: 	0.187 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.253 seconds.
+Processing time:   		610.200 seconds.
+
+Input:                  	30569861 reads 		1528493050 bases.
+QTrimmed:               	10582006 reads (34.62%) 	529100300 bases (34.62%)
+KTrimmed:               	159108 reads (0.52%) 	7955400 bases (0.52%)
+Total Removed:          	10741114 reads (35.14%) 	537055700 bases (35.14%)
+Result:                 	19828747 reads (64.86%) 	991437350 bases (64.86%)
+
+Time:                         	610.655 seconds.
+Reads Processed:      30569k 	50.06k reads/sec
+Bases Processed:       1528m 	2.50m bases/sec
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782727.fastq.gz out1=data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782727.fastq.gz, out1=data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.112 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 2152 kmers; time: 	0.166 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.198 seconds.
+Processing time:   		661.709 seconds.
+
+Input:                  	37991212 reads 		1899560600 bases.
+QTrimmed:               	13980763 reads (36.80%) 	699038150 bases (36.80%)
+KTrimmed:               	59124 reads (0.16%) 	2956200 bases (0.16%)
+Total Removed:          	14039887 reads (36.96%) 	701994350 bases (36.96%)
+Result:                 	23951325 reads (63.04%) 	1197566250 bases (63.04%)
+
+Time:                         	662.081 seconds.
+Reads Processed:      37991k 	57.38k reads/sec
+Bases Processed:       1899m 	2.87m bases/sec
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782834.fastq.gz out1=data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782834.fastq.gz, out1=data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.070 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4265m, used=29m
+
+Added 2152 kmers; time: 	0.153 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.211 seconds.
+Processing time:   		664.155 seconds.
+
+Input:                  	41895962 reads 		2094798100 bases.
+QTrimmed:               	13902455 reads (33.18%) 	695122750 bases (33.18%)
+KTrimmed:               	1078741 reads (2.57%) 	53937050 bases (2.57%)
+Total Removed:          	14981196 reads (35.76%) 	749059800 bases (35.76%)
+Result:                 	26914766 reads (64.24%) 	1345738300 bases (64.24%)
+
+Time:                         	664.528 seconds.
+Reads Processed:      41895k 	63.05k reads/sec
+Bases Processed:       2094m 	3.15m bases/sec
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782912.fastq.gz out1=data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782912.fastq.gz, out1=data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.096 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4265m, used=29m
+
+Added 2152 kmers; time: 	0.162 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.281 seconds.
+Processing time:   		671.826 seconds.
+
+Input:                  	40141437 reads 		2007071850 bases.
+QTrimmed:               	12588178 reads (31.36%) 	629408900 bases (31.36%)
+KTrimmed:               	59685 reads (0.15%) 	2984250 bases (0.15%)
+Total Removed:          	12647863 reads (31.51%) 	632393150 bases (31.51%)
+Result:                 	27493574 reads (68.49%) 	1374678700 bases (68.49%)
+
+Time:                         	672.276 seconds.
+Reads Processed:      40141k 	59.71k reads/sec
+Bases Processed:       2007m 	2.99m bases/sec
+java -ea -Xmx4g -Xms4g -cp /home/ctools/bbmap/current/ jgi.BBDuk -Xmx4g in1=data/rnaseq/_raw/SRR1782742.fastq.gz out1=data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz threads=10 k=25 kmin=11 ktrim=r qtrim=r trimq=20 minlength=50 overwrite=t ziplevel=6 ref=data/adapters/adapters.fa
+Executing jgi.BBDuk [-Xmx4g, in1=data/rnaseq/_raw/SRR1782742.fastq.gz, out1=data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz, threads=10, k=25, kmin=11, ktrim=r, qtrim=r, trimq=20, minlength=50, overwrite=t, ziplevel=6, ref=data/adapters/adapters.fa]
+Version 39.01
+
+Set threads to 10
+maskMiddle was disabled because useShortKmers=true
+0.101 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4267m, used=27m
+
+Added 2152 kmers; time: 	0.164 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.185 seconds.
+Processing time:   		672.672 seconds.
+
+Input:                  	41944791 reads 		2097239550 bases.
+QTrimmed:               	15691648 reads (37.41%) 	784582400 bases (37.41%)
+KTrimmed:               	51302 reads (0.12%) 	2565100 bases (0.12%)
+Total Removed:          	15742950 reads (37.53%) 	787147500 bases (37.53%)
+Result:                 	26201841 reads (62.47%) 	1310092050 bases (62.47%)
+
+Time:                         	673.029 seconds.
+Reads Processed:      41944k 	62.32k reads/sec
+Bases Processed:       2097m 	3.12m bases/sec
+
+real	11m14.576s
+user	171m31.265s
+sys	9m27.934s

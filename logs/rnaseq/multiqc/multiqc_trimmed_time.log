@@ -1,0 +1,54 @@
+
+  /// MultiQC 🔍 | v1.19
+
+|           multiqc | Report title: Trimmed reads multiqc
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782686_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782686_pass_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782694_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782694_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782695_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782695_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782698_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782698_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782701_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782701_pass_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782703_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782703_pass_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782704_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782704_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782705_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782705_pass_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782715_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782715_pass_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782722_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782722_pass_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782727_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782727_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782730_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782730_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782742_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782742_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782773_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782773_pass_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782774_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782774_pass_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782804_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782804_pass_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782829_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782829_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782834_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782834_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782912_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782912_trimmed_fastqc.zip
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782952_pass_trimmed_fastqc.html
+|           multiqc | Search path : /home/projects/22126_NGS/projects/group8/mikkel/NGS-Project/results/rnaseq/fastqc/trimmed/SRR1782952_pass_trimmed_fastqc.zip
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 40/40  
+|            fastqc | Found 20 reports
+|           multiqc | Existing reports found, adding suffix to filenames. Use '--force' to overwrite.
+|           multiqc | Report      : results/rnaseq/multiqc/trimmed/Trimmed-reads-multiqc_multiqc_report_1.html
+|           multiqc | Data        : results/rnaseq/multiqc/trimmed/Trimmed-reads-multiqc_multiqc_report_data_1
+|           multiqc | MultiQC complete
+
+real	0m2.565s
+user	0m3.144s
+sys	0m2.346s

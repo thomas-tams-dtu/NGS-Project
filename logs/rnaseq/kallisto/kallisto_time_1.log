@@ -1,0 +1,35 @@
+/home/ctools/kallisto/build/src/kallisto index -i data/rnaseq/kallisto//kallisto_human_index.idx data/references/GRCh38_latest_rna.fna.gz
+data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782742
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782742 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782742_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782834
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782834 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782834_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782694
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782694 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782694_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782727
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782727 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782727_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782698
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782698 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782698_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782704
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782704 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782704_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782695
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782695 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782695_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782829
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782829 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782829_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782912
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782912 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782912_trimmed.fastq.gz
+data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+data/rnaseq/kallisto//SRR1782730
+/home/ctools/kallisto/build/src/kallisto quant -i data/rnaseq/kallisto//kallisto_human_index.idx -o data/rnaseq/kallisto//SRR1782730 --single -l 200 -s 20 -t 10 data/rnaseq/trimmed/SRR1782730_trimmed.fastq.gz
+
+real	0m0.251s
+user	0m0.238s
+sys	0m0.103s

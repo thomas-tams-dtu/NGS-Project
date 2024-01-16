@@ -1,0 +1,9 @@
+
+[build] loading fasta file data/references/GRCh38_latest_rna.fna.gz
+[build] k-mer length: 31
+[build] warning: clipped off poly-A tail (longer than 10)
+        from 5074 target sequences
+[build] warning: replaced 16 non-ACGUT characters in the input sequence
+        with pseudorandom nucleotides
+[build] counting k-mers ... done.
+[build] building target de Bruijn graph ... 
