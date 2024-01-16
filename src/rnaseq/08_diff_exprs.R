@@ -3,18 +3,17 @@ library("pairedGSEA")
 library("tidyverse")
 
 # Load count matrix
-counts <- read_tsv("data/rnaseq/deseq/count_matrix.tsv") %>% 
+counts <- read_tsv("data/rnaseq/diff_exprs/count_matrix.tsv") %>% 
   column_to_rownames("id") %>%
   as.matrix() %>%
   round()
-
 ids <- colnames(counts)
 
 # Load metadata
 meta <- read_delim("data/rnaseq/_raw/rnaseq_meta.txt", delim = ",") %>%
   filter(Run %in% ids) %>%
   filter(!(Run %in% c("SRR1782694", "SRR1782695"))) %>%
-  select(Run, diagnosis)
+  dplyr::select(Run, diagnosis)
 
 # Create a condition column and rename sample column
 meta <- meta %>% 
@@ -25,8 +24,8 @@ meta <- meta %>%
       diagnosis == "CD" ~ "CD"
     )
   ) %>%
-  rename(sample_id = Run) %>%
-  select(sample_id, condition)
+  dplyr::rename(sample_id = Run) %>%
+  dplyr::select(sample_id, condition, deep_ulcer)
 
 # Select only the specified samples from count matrix
 counts <- counts[, meta$sample_id]
