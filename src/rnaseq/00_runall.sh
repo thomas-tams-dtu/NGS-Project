@@ -43,14 +43,14 @@
 ########## Step 05: Generate kallisto index ##########
 ( time bash src/rnaseq/05_kallisto_index.sh \
 -f data/references/gencode.v45.transcripts.fa.gz \
--a data/references/gencode.v45.annotation.gtf.gz \
 -o data/rnaseq/kallisto/ \
 -l logs/rnaseq/kallisto/kallisto_index.log) 2>&1 | tee logs/rnaseq/kallisto/kallisto_index_time.log
 
 ########## Step 06: Perform pseudo-alignment using kallisto ##########
 ( time bash src/rnaseq/06_kallisto_alignment.sh \
--r data/rnaseq/trimmed/ \
--o data/rnaseq/kallisto/ \
+-r data/rnaseq/trimmed \
+-o data/rnaseq/kallisto \
+-t 10 \
 -l logs/rnaseq/kallisto/kallisto_quant.log) 2>&1 | tee logs/rnaseq/kallisto/kallisto_quant_time.log
 
 
