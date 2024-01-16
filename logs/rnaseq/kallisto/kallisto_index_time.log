@@ -1,0 +1,18 @@
+
+[build] loading fasta file data/references/gencode.v45.transcripts.fa.gz
+[build] k-mer length: 31
+[build] warning: clipped off poly-A tail (longer than 10)
+        from 2034 target sequences
+[build] warning: replaced 4 non-ACGUT characters in the input sequence
+        with pseudorandom nucleotides
+[build] counting k-mers ... done.
+[build] building target de Bruijn graph ...  done 
+[build] creating equivalence classes ...  done
+[build] target de Bruijn graph has 1634155 contigs and contains 150424840 k-mers 
+
+src/rnaseq/05_kallisto_index.sh: line 37: unexpected EOF while looking for matching `"'
+src/rnaseq/05_kallisto_index.sh: line 38: syntax error: unexpected end of file
+
+real	8m33.918s
+user	8m7.168s
+sys	0m15.692s
