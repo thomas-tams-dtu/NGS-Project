@@ -1,0 +1,13 @@
+Processing line: SRR1782728
+--gzip --skip-technical --readids --read-filter pass --dumpbase --clip -O data/rnaseq/_raw/ SRR1782728
+Read 20095045 spots for SRR1782728
+Written 20095045 spots for SRR1782728
+Processing line: SRR1782802
+--gzip --skip-technical --readids --read-filter pass --dumpbase --clip -O data/rnaseq/_raw/ SRR1782802
+Read 20537457 spots for SRR1782802
+Written 20537457 spots for SRR1782802
+src/preprocess/01_download_raw_fastq.sh: line 79: Find: command not found
+
+real	24m26.974s
+user	14m29.602s
+sys	0m13.959s
