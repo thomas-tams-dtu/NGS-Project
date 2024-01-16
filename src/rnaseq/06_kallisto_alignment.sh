@@ -49,7 +49,7 @@ kallisto_quant() {
     mkdir -p "$output_dir"
 
     # Run Kallisto quant and redirect output to log file
-    nice -19 $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p13_index" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
+    nice -19 $kallisto quant -i "${OUTPUT_DIR_ROOT}/GRCh38.p14_index_only_transcriptome" -o "$output_dir" --single -l 200 -s 20 -t "$NUM_THREADS" "$read_file"
 }
 
 # Export the function for parallel to use
