@@ -59,7 +59,7 @@ pl1 <- aggregate_pvalues |>
     alpha = 0.5
   ) +
   geom_text_repel(
-    size = 6,
+    size = 4,
     max.overlaps = 25,
     force = 2.5
   ) +
@@ -71,7 +71,9 @@ pl1 <- aggregate_pvalues |>
   theme_bw() +
   theme(
     legend.position = "none",
-    text = element_text(size = 20)
+    axis.title.x = element_text(size = 20),
+    axis.title.y = element_text(size = 20),
+    axis.text = element_text(size = 16)
   ) +
   labs(
     x = bquote(log[2]("fold change")),
@@ -82,9 +84,9 @@ pl1 <- aggregate_pvalues |>
   ) +
   scale_color_manual(values = c("blue", "red", "black")) +
   coord_cartesian(
-    xlim = c(-10, 10)
+    xlim = c(-7, 10)
   )
-ggsave("results/rnaseq/diff_exprs/vulcano_plot_deseq.png", pl1, height = 13, width = 12)
+ggsave("results/rnaseq/diff_exprs/vulcano_plot_deseq.png", pl1, height = 8, width = 6)
 
 
 # Heatmap
@@ -181,10 +183,19 @@ ha_samples <- HeatmapAnnotation(
   show_annotation_name = FALSE,
   annotation_legend_param = list(
     Condition = list(
-      nrow = 1
+      nrow = 1,
+      title_gp = gpar(fontsize = 18),
+      labels_gp = gpar(fontsize = 16)
     )
   )
 )
+
+# Adjust font size for column labels
+column_label_size <- gpar(fontsize = 16) # Change 12 to your desired size
+
+# Adjust font size for row labels
+row_label_size <- gpar(fontsize = 16) # Change 12 to your desired size
+
 
 # Heatmap
 ha <- HeatmapAnnotation(summary = anno_summary(
@@ -200,11 +211,23 @@ h1 <- Heatmap(
   name = "Z-score",
   cluster_columns = TRUE,
   height = unit(30, "cm"),
-  top_annotation = ha_samples # Add this line
+  top_annotation = ha_samples, # Add this line
+  column_names_gp = column_label_size,
+  heatmap_legend_param = list(
+    title_gp = gpar(fontsize = 16),
+    labels_gp = gpar(fontsize = 14)
+  ), # Adjust legend font size
+  column_names_rot = 40
 )
 h2 <- Heatmap(l2_val,
   row_labels = top_genes_deseq$gene[rows_keep],
   cluster_rows = FALSE, name = "log2FC", top_annotation = ha, col = col_logFC,
+  row_names_gp = row_label_size, # Apply adjusted font size
+  heatmap_legend_param = list(
+    title_gp = gpar(fontsize = 16),
+    labels_gp = gpar(fontsize = 14)
+  ),
+  column_names_rot = 40,
   cell_fun = function(j, i, x, y, w, h, col) { # add text to each grid
     grid.text(round(l2_val[i, j], 2), x, y)
   }
@@ -212,6 +235,12 @@ h2 <- Heatmap(l2_val,
 h3 <- Heatmap(base_mean_val,
   row_labels = top_genes_deseq$gene[rows_keep],
   cluster_rows = FALSE, name = "AveExpr", col = col_AveExpr,
+  row_names_gp = row_label_size, # Apply adjusted font size
+  heatmap_legend_param = list(
+    title_gp = gpar(fontsize = 16),
+    labels_gp = gpar(fontsize = 14)
+  ),
+  column_names_rot = 40,
   cell_fun = function(j, i, x, y, w, h, col) { # add text to each grid
     grid.text(round(base_mean_val[i, j], 2), x, y)
   }
@@ -223,6 +252,6 @@ h <- draw(h,
   legend_grouping = "original"
 )
 
-png("results/rnaseq/diff_exprs/heatmap_v2.png", res = 300, width = 6000, height = 4500)
+png("results/rnaseq/diff_exprs/heatmap_v2.png", res = 400, width = 7500, height = 6000)
 print(h)
 dev.off()
