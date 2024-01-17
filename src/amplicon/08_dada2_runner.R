@@ -9,7 +9,7 @@ library('ggplot2'); packageVersion("ggplot2")
 theme_set(theme_bw())
 
 # Set path to input trimmed files
-path <- here("data/amplicon/bowtie2_tpe")
+path <- here("data/amplicon/bowtie_519")
 
 # Get filenames of forward and reverse reads
 fnFs <- sort(list.files(path, pattern="_1.fastq.gz", full.names = TRUE))
@@ -19,8 +19,8 @@ fnRs <- gsub('_1', '_2', fnFs)
 sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
 
 # Output for filtering
-filtFs <- file.path(here(paste0("data/amplicon/dada2/", sample.names, "_1_filt.fastq.gz")))
-filtRs <- file.path(here(paste0("data/amplicon/dada2/", sample.names, "_2_filt.fastq.gz")))
+filtFs <- file.path(here(paste0("data/amplicon/dada2_519/", sample.names, "_1_filt.fastq.gz")))
+filtRs <- file.path(here(paste0("data/amplicon/dada2_519/", sample.names, "_2_filt.fastq.gz")))
 
 #names(filtFs) <- sample.names
 #names(filtRs) <- sample.names
@@ -120,7 +120,7 @@ taxa <- addSpecies(taxa,
 
 ### Off to phyloseq
 ### Setup physeq data
-meta <- read_csv(here("data/amplicon/_raw/amplicon_metadata.csv"))
+meta <- read_csv(here("data/amplicon/amplicon_metadata.csv"))
 meta <- meta |> filter(Run %in% baseSRAs_seqtab)
 
 # Create sample_data object and set row/ sample_names
@@ -150,4 +150,4 @@ taxa_names(ps) <- paste0("ASV", seq(ntaxa(ps)))
 
 
 # Saving phyloseq object
-saveRDS(ps, here("data/amplicon/dada2/amplicon.phyloseq.rds"))
+saveRDS(ps, here("data/amplicon/dada2/amplicon_519.phyloseq.rds"))
