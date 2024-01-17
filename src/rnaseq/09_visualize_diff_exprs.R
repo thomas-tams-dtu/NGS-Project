@@ -123,8 +123,8 @@ mat_scaled <- t(apply(mat, 1, scale))
 colnames(mat_scaled) <- colData(dds_deseq)$sample_id
 
 # Log2 fold change and baseMean columns
-num_keep <- 25
-rows_keep <- c(seq(1:num_keep), seq((nrow(mat_scaled) - num_keep), nrow(mat_scaled)))
+num_keep <- 47
+rows_keep <- c(seq(1:num_keep), seq((nrow(mat_scaled) - 2), nrow(mat_scaled)))
 
 # Log2FC
 l2_val <- as.matrix(top_genes[rows_keep, ]$lfc_deseq)
