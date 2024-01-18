@@ -36,8 +36,8 @@ aggregate_pvalues <- aggregate_pvalues |>
       padj_deseq > 0.05 ~ "no"
     ),
     regulated = case_when(
-      lfc_deseq > 2 ~ "up",
-      lfc_deseq < -2 ~ "down"
+      is_significant == "yes" & lfc_deseq > 2 ~ "up",
+      is_significant == "yes" & lfc_deseq < -2 ~ "down"
     )
   )
 
@@ -59,9 +59,9 @@ pl1 <- aggregate_pvalues |>
     alpha = 0.5
   ) +
   geom_text_repel(
-    size = 6,
+    size = 4,
     max.overlaps = 25,
-    force = 2
+    force = 2.5
   ) +
   geom_hline(yintercept = 0) +
   geom_hline(yintercept = -log(0.05, base = 10), linetype = "dashed", color = "red") +
@@ -71,7 +71,9 @@ pl1 <- aggregate_pvalues |>
   theme_bw() +
   theme(
     legend.position = "none",
-    text = element_text(size = 20)
+    axis.title.x = element_text(size = 20),
+    axis.title.y = element_text(size = 20),
+    axis.text = element_text(size = 16)
   ) +
   labs(
     x = bquote(log[2]("fold change")),
@@ -80,11 +82,11 @@ pl1 <- aggregate_pvalues |>
     # subtitle = str_c("Trancripts highlighted"),
     caption = "Data from DOI: https://doi.org/10.1172/JCI75436"
   ) +
-  scale_color_manual(values = c("red", "blue", "black")) +
+  scale_color_manual(values = c("blue", "red", "black")) +
   coord_cartesian(
-    xlim = c(-10, 10)
+    xlim = c(-7, 10)
   )
-ggsave("results/rnaseq/diff_exprs/vulcano_plot_deseq.png", pl1, height = 13, width = 12)
+ggsave("results/rnaseq/diff_exprs/vulcano_plot_deseq.png", pl1, height = 8, width = 6)
 
 
 # Heatmap
@@ -118,13 +120,14 @@ mat <- assay(norm_data) %>%
   rownames_to_column("id") %>%
   filter(id %in% top_genes_deseq$id) %>%
   column_to_rownames("id")
+mat <- mat[top_genes_deseq$id, ]
 base_mean <- rowMeans(mat)
 mat_scaled <- t(apply(mat, 1, scale))
 colnames(mat_scaled) <- colData(dds_deseq)$sample_id
 
 # Log2 fold change and baseMean columns
-num_keep <- 47
-rows_keep <- c(seq(1:num_keep), seq((nrow(mat_scaled) - 2), nrow(mat_scaled)))
+num_keep <- 66
+rows_keep <- c(seq(1:num_keep)) # , seq((nrow(mat_scaled) - 2), nrow(mat_scaled)))
 
 # Log2FC
 l2_val <- as.matrix(top_genes[rows_keep, ]$lfc_deseq)
@@ -143,30 +146,85 @@ top_genes_deseq <- top_genes_deseq %>%
 
 # maps values between b/w/r for min and max l2 values
 col_logFC <- colorRamp2(
-  c(min(l2_val), 0, max(l2_val)), c("white", "blue", "darkblue")
+  c(min(l2_val), 0, max(l2_val)), c("white", "lightblue", "blue")
 )
 
 # maps between 0% quantile, and 75% quantile of mean values --- 0, 25, 50, 75, 100
 col_AveExpr <- colorRamp2(
   c(quantile(base_mean_val)[1], quantile(base_mean_val)[4]), c("white", "red")
 )
+
+# Extract condition information
+sample_conditions <- colData(dds_deseq)$condition
+sample_ids <- colData(dds_deseq)$sample_id
+
+# Create a data frame for annotation
+sample_annotation <- data.frame(
+  Condition = factor(sample_conditions,
+    levels = unique(sample_conditions)
+  )
+)
+rownames(sample_annotation) <- sample_ids
+
+# Extract unique conditions
+unique_conditions <- unique(sample_annotation$Condition)
+
+# Assign colors to each unique condition
+# Modify this to match the number of unique conditions you have
+condition_colors <- setNames(c("purple", "yellow"), unique_conditions)
+
+# Create the annotation object with the named color vector
+ha_samples <- HeatmapAnnotation(
+  df = sample_annotation,
+  col = list(Condition = condition_colors),
+  show_annotation_name = FALSE,
+  annotation_legend_param = list(
+    Condition = list(
+      nrow = 1,
+      title_gp = gpar(fontsize = 18),
+      labels_gp = gpar(fontsize = 16)
+    )
+  )
+)
+
+# Adjust font size for column labels
+column_label_size <- gpar(fontsize = 16) # Change 12 to your desired size
+
+# Adjust font size for row labels
+row_label_size <- gpar(fontsize = 16) # Change 12 to your desired size
+
+
 # Heatmap
 ha <- HeatmapAnnotation(summary = anno_summary(
   gp = gpar(fill = 2),
-  height = unit(5, "cm")
+  height = unit(3, "cm")
 ))
 
+# Add the annotation to the heatmap
 h1 <- Heatmap(
   mat_scaled[rows_keep, ],
   cluster_rows = FALSE,
   column_labels = colnames(mat_scaled),
   name = "Z-score",
   cluster_columns = TRUE,
-  height = unit(25, "cm")
+  height = unit(30, "cm"),
+  top_annotation = ha_samples, # Add this line
+  column_names_gp = column_label_size,
+  heatmap_legend_param = list(
+    title_gp = gpar(fontsize = 16),
+    labels_gp = gpar(fontsize = 14)
+  ), # Adjust legend font size
+  column_names_rot = 40
 )
 h2 <- Heatmap(l2_val,
   row_labels = top_genes_deseq$gene[rows_keep],
-  cluster_rows = FALSE, name = "logFC", top_annotation = ha, col = col_logFC,
+  cluster_rows = FALSE, name = "log2FC", top_annotation = ha, col = col_logFC,
+  row_names_gp = row_label_size, # Apply adjusted font size
+  heatmap_legend_param = list(
+    title_gp = gpar(fontsize = 16),
+    labels_gp = gpar(fontsize = 14)
+  ),
+  column_names_rot = 40,
   cell_fun = function(j, i, x, y, w, h, col) { # add text to each grid
     grid.text(round(l2_val[i, j], 2), x, y)
   }
@@ -174,13 +232,23 @@ h2 <- Heatmap(l2_val,
 h3 <- Heatmap(base_mean_val,
   row_labels = top_genes_deseq$gene[rows_keep],
   cluster_rows = FALSE, name = "AveExpr", col = col_AveExpr,
+  row_names_gp = row_label_size, # Apply adjusted font size
+  heatmap_legend_param = list(
+    title_gp = gpar(fontsize = 16),
+    labels_gp = gpar(fontsize = 14)
+  ),
+  column_names_rot = 40,
   cell_fun = function(j, i, x, y, w, h, col) { # add text to each grid
     grid.text(round(base_mean_val[i, j], 2), x, y)
   }
 )
 
 h <- h1 + h2 + h3
+h <- draw(h,
+  heatmap_legend_side = "right", annotation_legend_side = "top",
+  legend_grouping = "original"
+)
 
-png("results/rnaseq/diff_exprs/heatmap_v1.png", res = 300, width = 4000, height = 4000)
+png("results/rnaseq/diff_exprs/heatmap_v3.png", res = 400, width = 7500, height = 6500)
 print(h)
 dev.off()
