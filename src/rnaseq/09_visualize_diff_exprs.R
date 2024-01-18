@@ -181,17 +181,17 @@ ha_samples <- HeatmapAnnotation(
   annotation_legend_param = list(
     Condition = list(
       nrow = 1,
-      title_gp = gpar(fontsize = 18),
-      labels_gp = gpar(fontsize = 16)
+      title_gp = gpar(fontsize = 20),
+      labels_gp = gpar(fontsize = 18)
     )
   )
 )
 
 # Adjust font size for column labels
-column_label_size <- gpar(fontsize = 16) # Change 12 to your desired size
+column_label_size <- gpar(fontsize = 18) # Change 12 to your desired size
 
 # Adjust font size for row labels
-row_label_size <- gpar(fontsize = 16) # Change 12 to your desired size
+row_label_size <- gpar(fontsize = 18) # Change 12 to your desired size
 
 
 # Heatmap
@@ -207,14 +207,14 @@ h1 <- Heatmap(
   column_labels = colnames(mat_scaled),
   name = "Z-score",
   cluster_columns = TRUE,
-  height = unit(30, "cm"),
+  height = unit(35, "cm"),
   top_annotation = ha_samples, # Add this line
   column_names_gp = column_label_size,
   heatmap_legend_param = list(
     title_gp = gpar(fontsize = 16),
     labels_gp = gpar(fontsize = 14)
   ), # Adjust legend font size
-  column_names_rot = 40
+  column_names_rot = 75
 )
 h2 <- Heatmap(l2_val,
   row_labels = top_genes_deseq$gene[rows_keep],
@@ -224,7 +224,7 @@ h2 <- Heatmap(l2_val,
     title_gp = gpar(fontsize = 16),
     labels_gp = gpar(fontsize = 14)
   ),
-  column_names_rot = 40,
+  column_names_rot = 75,
   cell_fun = function(j, i, x, y, w, h, col) { # add text to each grid
     grid.text(round(l2_val[i, j], 2), x, y)
   }
@@ -237,7 +237,7 @@ h3 <- Heatmap(base_mean_val,
     title_gp = gpar(fontsize = 16),
     labels_gp = gpar(fontsize = 14)
   ),
-  column_names_rot = 40,
+  column_names_rot = 75,
   cell_fun = function(j, i, x, y, w, h, col) { # add text to each grid
     grid.text(round(base_mean_val[i, j], 2), x, y)
   }
@@ -249,6 +249,6 @@ h <- draw(h,
   legend_grouping = "original"
 )
 
-png("results/rnaseq/diff_exprs/heatmap_v3.png", res = 400, width = 7500, height = 6500)
+png("results/rnaseq/diff_exprs/heatmap_v4.png", res = 400, width = 8000, height = 7000)
 print(h)
 dev.off()
