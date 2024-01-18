@@ -155,10 +155,7 @@ col_AveExpr <- colorRamp2(
 )
 
 # Extract condition information
-sample_conditions <- colData(dds_deseq) %>%
-  as.data.frame() %>%
-  mutate(condition = if_else(condition == "CD", "Crohn's Disease", condition)) %>%
-  pull(condition)
+sample_conditions <- colData(dds_deseq)$condition
 sample_ids <- colData(dds_deseq)$sample_id
 
 # Create a data frame for annotation
@@ -252,6 +249,6 @@ h <- draw(h,
   legend_grouping = "original"
 )
 
-png("results/rnaseq/diff_exprs/heatmap_v2.png", res = 400, width = 7500, height = 6000)
+png("results/rnaseq/diff_exprs/heatmap_v3.png", res = 400, width = 7500, height = 6500)
 print(h)
 dev.off()
