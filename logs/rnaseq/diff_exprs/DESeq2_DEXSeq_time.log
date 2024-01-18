@@ -1,0 +1,40 @@
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.4.2      ✔ purrr   1.0.0 
+✔ tibble  3.1.8      ✔ dplyr   1.0.10
+✔ tidyr   1.2.1      ✔ stringr 1.5.0 
+✔ readr   2.1.3      ✔ forcats 0.5.2 
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Rows: 252930 Columns: 23
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr  (1): id
+dbl (22): SRR1782686, SRR1782694, SRR1782695, SRR1782698, SRR1782701, SRR178...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+Rows: 322 Columns: 34
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (27): Run, Assay Type, BioProject, BioSample, Center Name, Consent, DAT...
+dbl   (5): age_at_diagnosis, AvgSpotLen, Bases, Bytes, version
+dttm  (2): ReleaseDate, create_date
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] TRUE
+Running Pediatric_Crohn_disease_covariates
+Preparing metadata
+Converting count matrix to DESeqDataSet
+converting counts to integer mode
+Running SVA
+Number of significant surrogate variables is:  5 
+Iteration (out of 5 ):1  2  3  4  5  
+Found 5 surrogate variables
+Redefining DESeq design formula
+
+Running DESeq2
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates

@@ -53,6 +53,10 @@
 -t 10 \
 -l logs/rnaseq/kallisto/kallisto_quant.log) 2>&1 | tee logs/rnaseq/kallisto/kallisto_quant_time.log
 
+########## Step 07: Create count matrix ##########
+( time nice -n 19 /home/ctools/R-4.2.2/bin/Rscript src/rnaseq/07_create_count_matrix.R ) 2>&1 | tee logs/rnaseq/diff_exprs/count_matrix_time.log
 
+########## Step 08: Run differential expression ##########
+( time nice -n 19 /home/ctools/R-4.2.2/bin/Rscript src/rnaseq/08_diff_exprs.R ) 2>&1 | tee logs/rnaseq/diff_exprs/DESeq2_DEXSeq_time.log
 
 
