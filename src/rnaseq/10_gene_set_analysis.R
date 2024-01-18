@@ -19,8 +19,9 @@ paired_ora <- paired_ora(
 ### DGE:
 dge_ora_sorted <- paired_ora %>%
   arrange(padj_deseq) %>%
-  dplyr::select(pathway, padj_deseq, enrichment_score_deseq)
-head(dge_ora_sorted, 20)
+  dplyr::select(pathway, padj_deseq, enrichment_score_deseq) %>%
+  filter(padj_deseq <= 0.05)
+print(dge_ora_sorted, n = 68)
 
 ### DGU ORA:
 dgu_ora_sorted <- paired_ora %>%
